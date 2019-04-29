@@ -1,0 +1,59 @@
+.products {
+    &__title {
+        padding-left: 2rem;
+        font-weight: 600;
+        background-position: 95%;
+        border-bottom: 1px solid #d5dbde;
+
+        &:hover {
+            cursor: pointer;
+            @media (min-width: 992px) {
+                cursor: auto;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            height: auto;
+            line-height: auto;
+            background-image: none;
+            background-color: transparent;
+            border-bottom: none;
+            padding: 0;
+        }
+
+        &.active {
+            background-image: url(../images/minus-grey.png);
+            @media (min-width: 992px) {
+                background-image: none;
+            }
+        } 
+    }
+
+    &__panel {
+        display: none;
+        background-color: $white;
+        overflow: hidden;
+        @media (min-width: 992px) {
+            display: block !important;
+            background-color: transparent;
+            overflow: visible;
+        }
+    }
+
+    &__list-item {
+        padding: 1rem 1.8rem;
+        border-bottom: 1px solid $content-primary-color;
+        @media (min-width: 992px) {
+            padding: 0;
+            border-bottom: none;
+        }
+        a {
+            color: $content-secondary-color;
+            font-size: 1.4rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

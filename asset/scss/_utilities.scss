@@ -1,0 +1,20 @@
+.u-row {
+    display: flex;  
+}
+
+.u-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.u-item-center {
+    align-items: center;
+}
+
+.ui-img-responsive {
+    max-width: 100%;
+}
+
+.js-hide {
+    display: none;
+}

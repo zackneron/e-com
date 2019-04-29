@@ -1,0 +1,25 @@
+.add {
+    &__btn {
+        align-items: center;
+        border: none;
+        background-color: $add-btn-bg-color;
+        color: $white;
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding: 1rem;
+        display: flex;
+
+        &:focus,
+        &:visited {
+            outline: none;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__basket {
+        font-size: 2rem;
+        margin-right: .5rem;
+    }
+}

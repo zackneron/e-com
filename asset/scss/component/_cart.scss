@@ -1,0 +1,14 @@
+.cart {
+    text-align: right;
+    a {
+        color: $secondary-green-color;
+    }
+
+    &__count {
+        background-color: $secondary-green-color;
+        border-radius: 5rem;
+        color: $white;
+        padding: .5rem 1rem;
+        margin-left: 1rem;
+    }
+}

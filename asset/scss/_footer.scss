@@ -1,0 +1,31 @@
+.footer {
+    background-color: $footer-bg-color;
+    @media (min-width: 768px) {
+        padding-bottom: 11rem;
+    }
+    @media (min-width: 992px) {
+        padding: 5rem 0 11rem;
+    }
+
+    & > .container {
+        @media (max-width: 767px) {
+            margin: 0;
+        }
+    }
+}
+
+.footer__top-level {
+    margin-bottom: 4rem;
+    .row > .col-1-of-2 {
+        @media (max-width: 992px) {
+            width: 100%;
+            margin-right: 0;
+        } 
+    }
+}
+
+.footer__bottom-level {
+    @media (max-width: 767px) {
+        padding: 0 1.5rem;
+    }
+}

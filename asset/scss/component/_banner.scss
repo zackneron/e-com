@@ -1,0 +1,33 @@
+.banner {
+    background-color: $white;
+
+    &__info  {
+        .col-1-of-2 {
+            @media (max-width: 1139px) {
+                width: 100%;
+            }
+        }
+        
+    }
+}
+
+.banner__ads {
+    display: none;
+    @media (min-width: 1140px) {
+        display: block;
+        margin-top: 2rem;
+    }
+    &--items {
+        display: block;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.banner__search {
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+        margin-top: 2rem;
+    }
+}

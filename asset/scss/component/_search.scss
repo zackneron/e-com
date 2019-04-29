@@ -1,0 +1,68 @@
+.search {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    @media (min-width: 1140px) {
+        flex-direction: row;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: flex-end;
+
+        @media (min-width: 1140px) {
+            margin-right: 1rem;
+        }
+
+        form {
+            position: relative;
+        }
+
+        .fa-search {
+            position: absolute;
+            right: 1rem;
+            top: 1.5rem;
+        }
+
+        &--field {
+            background-color: $search-input-bg-color;
+            border-radius: 3rem;
+            padding: 1.5rem;
+            padding-left: 2rem;
+            padding-right: 3.5rem;
+            border: none;
+            box-shadow: inset 0 1px 1px #cbced2;
+            width: 27rem;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    &__faq {
+        @media (max-width: 1140px) {
+            order: -1;
+        }
+
+        &--field {
+            border: 2px solid #e4e9ef;
+            height: 4.4rem;
+            color: #868d92;
+            font-size: 1.4rem;
+            line-height: 7px;
+            width: 19rem;
+            float: right;
+            font-weight: 700;
+            border-radius: 2.5rem;
+            background: $white;
+            margin-bottom: 1rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1.2rem 0 1.5rem;
+        }
+    }
+}

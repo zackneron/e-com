@@ -1,0 +1,58 @@
+.desktop-menu {
+    @media (max-width: 767px) {
+        display: none;
+    }
+
+    &__item {
+        display: inline-block;
+        margin-right: 1.5rem;
+        position: relative;
+        height: 5.5rem;
+        line-height: 5.5rem;
+        &:hover {
+            & > ul {
+                display: block;
+            }
+        }
+
+        a {
+            color: #a5adb3;
+            &:hover {
+                color: #7b8690;
+            }
+        }
+    }
+
+    &__dropdown {
+        display: none;
+        background: white;
+        width: 30rem;
+        padding: 1rem;
+        position: absolute;
+        line-height: 0;
+
+        &__item {
+            display: inline-block;
+            position: relative;
+            height: 4rem;
+            line-height: 4rem;
+            width: 100%;
+            border-bottom: 1px solid $search-input-bg-color;
+        }
+    }
+}
+
+.desktop-menu__dropdown {
+    a {
+        font-size: 1.2rem;
+        color: $secondary-green-color;
+        font-weight: 700;
+        display: block;
+        padding-left: 1rem;
+
+        &:hover {
+            background-color: $body-bg-color;
+            color: $secondary-green-color;
+        }
+    }
+}

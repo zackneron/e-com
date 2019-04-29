@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 10/16
+}
+
+body {
+    box-sizing: border-box;
+    color: $content-secondary-color;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $default-size;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+a {
+    transition: all .2s linear;
+    &:link,
+    &:focus,
+    &:visited {
+        outline: none;
+        text-decoration: none;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    background-color: $body-bg-color;
+}

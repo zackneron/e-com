@@ -1,0 +1,51 @@
+.mobile-menu {
+    @media (min-width: 768px) {
+        display: none !important;
+    }
+    &__offset {
+        margin: 0 -1.5rem;
+        padding: 0 1.5rem;
+        border-bottom: 1px solid $border-color;
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        & > li {
+            text-align: center;
+            border-bottom: 1px solid $border-color;
+        }
+        
+        a {
+            color: $content-secondary-color;
+            display: block; 
+            font-size: 1.5rem;
+        }
+    }
+
+    &__title {
+        background-position: 98%;
+    }
+    &__dropdown {
+        background-color: $search-input-bg-color;    
+    }
+}
+
+.mobile-menu__dropdown {
+    & > li {
+        margin: 0 1.5rem;    
+        text-align: left;
+            &:not(:last-child) {
+                border-bottom: 1px solid $dropdown-border-color;
+        }
+    }
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

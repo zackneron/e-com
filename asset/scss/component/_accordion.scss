@@ -1,0 +1,42 @@
+.accordion {
+    &__title {
+        display: block;
+        line-height: 5.5rem;
+        background-size: 1.9rem;
+        background-image: url(../images/plus-grey.png);
+        background-repeat: no-repeat;
+
+        &:hover {
+            cursor: pointer;
+            @media (min-width: 992px) {
+                cursor: auto;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            height: auto;
+            line-height: auto;
+            background-image: none;
+            background-color: transparent;
+            border-bottom: none;
+            padding: 0;
+        }
+
+        &.active {
+            background-image: url(../images/minus-grey.png);
+            @media (min-width: 992px) {
+                background-image: none;
+            }
+        } 
+    }
+
+    &__panel {
+        display: none;
+        overflow: hidden;
+        @media (min-width: 992px) {
+            display: block !important;
+            background-color: transparent;
+            overflow: visible;
+        }
+    }
+}

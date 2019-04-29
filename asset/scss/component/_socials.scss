@@ -1,0 +1,23 @@
+.socials {
+    margin-top: 4rem;
+    @media (min-width: 992px) {
+        margin: 2rem 0;
+    }
+
+    &__list {
+        justify-content: center;
+        @media (min-width: 992px) {
+            justify-content: flex-end;
+        }
+    }
+
+    &__item {
+        margin-right: 2rem;
+    }
+
+    a {
+        color: $content-secondary-color;
+        font-size: 1.8rem;
+    }
+}
+

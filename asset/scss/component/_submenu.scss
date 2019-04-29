@@ -1,0 +1,99 @@
+.submenu {
+    margin-top: 2rem;
+    @media (min-width: 768px) {
+        margin-top: 0;
+    }
+
+    &__line {
+        &:after {
+            content: "";
+            display: block;
+            margin: 0 1.5rem 2rem;
+            padding: 0 0 2rem;
+            border-bottom: 1px solid #eee;
+        }
+    }
+
+    &__list {
+        background-color: #d7e8ba;
+        margin: 0 -15px;
+
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 768px) {
+            border-radius: .5rem;
+            margin: 0 auto;
+            flex-direction: row;
+        }
+    }
+
+    .accordion {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        &:not(:last-child){
+            border-bottom: 1px solid #cedbb8;
+        }
+        @media (min-width: 768px) {
+            border-bottom: none;
+
+            &:first-child {
+                border-top-left-radius: .5rem;
+                border-bottom-left-radius: .5rem;
+            }
+        }
+        &:hover,
+        &.isActive {
+            background-color: #e8f2da;
+            cursor: pointer;
+        }
+    }
+
+    h3 {
+        display: block;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0 2rem;
+        position: relative;
+        color: #7f8c76;
+        font-size: 1.5rem;
+        line-height: 5.7rem;
+        transition: all .3s ease;
+        font-weight: 400;
+
+        @media (min-width: 768px) {
+            border-right: 1px solid #cedbb8;
+        }
+    }
+
+    &__panel {
+        background-color: $white !important;
+        padding: 2rem 0;
+        display: none;
+        
+        @media (min-width: 768px) {
+            position: absolute;
+            width: 20rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,.12);
+        }
+
+        li {
+            transition: all.3s linear;
+            padding: .5rem 1.5rem;
+            border-bottom: none;
+            &:hover {
+                background-color: $body-bg-color;
+            }
+        }
+
+        a {
+            display: block; 
+            &:hover {
+                color: $secondary-green-color; 
+                text-decoration: none !important;
+            }
+        }
+    } 
+}
